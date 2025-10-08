@@ -1,7 +1,8 @@
 import React from "react";
 import Banner from "../Banner/Banner";
 import ServicesSection from "../ServicesSection/ServicesSection";
-import ClientLogoSlider from "../ClientSlider/ClientSlider";
+import ClientLogoSlider from "../ClientLogoSlider/ClientLogoSlider";
+import FeaturesGrid from "../FeaturesGrid/FeaturesGrid";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Banner></Banner>
       <ServicesSection></ServicesSection>
       <ClientLogoSlider></ClientLogoSlider>
+      <FeaturesGrid></FeaturesGrid>
     </div>
   );
 };

@@ -35,7 +35,7 @@ export default function ClientLogoSlider() {
               key={index}
               src={logo}
               alt={`Client logo ${index}`}
-              className="h-10 sm:h-12 w-auto mx-8 inline-block object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="h-6 sm:h-6 w-auto mx-[100px] inline-block object-contain opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
             />
           ))}
         </Marquee>
