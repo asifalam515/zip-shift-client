@@ -82,7 +82,10 @@ export default function ServicesSection({
   id = "our-services",
 }) {
   return (
-    <section id={id} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <section
+      id={id}
+      className="text-primary max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+    >
       <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-extrabold">Our Services</h2>
         <p className="mt-4 text-base text-base-content/70">
