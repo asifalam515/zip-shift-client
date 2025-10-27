@@ -1,3 +1,4 @@
+import { p } from "framer-motion/client";
 import { useForm } from "react-hook-form";
 
 const Register = () => {
@@ -17,10 +18,13 @@ const Register = () => {
           <label className="label">Email</label>
           <input
             type="email"
-            {...register("email", { required: true })}
+            {...register("email", { required: "Email Address is Required" })}
             className="input"
             placeholder="Email"
           />
+          {errors.email?.type === "required" && (
+            <p className="text-red-400">{errors.email.message}</p>
+          )}
 
           <label className="label">Password</label>
           <input
