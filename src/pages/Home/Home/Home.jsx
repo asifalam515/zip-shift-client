@@ -4,6 +4,7 @@ import ServicesSection from "../ServicesSection/ServicesSection";
 import ClientLogoSlider from "../ClientLogoSlider/ClientLogoSlider";
 import FeaturesGrid from "../FeaturesGrid/FeaturesGrid";
 import BeMerchant from "../BeMerchant/BeMerchant";
+import TestimonialsSection from "../TestimonialSection/Testimonial";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <ClientLogoSlider></ClientLogoSlider>
       <FeaturesGrid></FeaturesGrid>
       <BeMerchant></BeMerchant>
+      <TestimonialsSection></TestimonialsSection>
     </div>
   );
 };
