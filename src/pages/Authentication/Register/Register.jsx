@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 
-const Login = () => {
+const Register = () => {
   const {
     register,
     handleSubmit,
@@ -11,6 +11,7 @@ const Login = () => {
   };
   return (
     <div>
+      <h1 className="text-5xl">Create An Account</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
         <fieldset className="fieldset">
           <label className="label">Email</label>
@@ -49,4 +50,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
