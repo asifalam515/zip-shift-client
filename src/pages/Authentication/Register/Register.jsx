@@ -40,7 +40,7 @@ const Register = () => {
           )}
           {errors.password?.type === "minLength" && (
             <p className="text-red-500" role="alert">
-              password must be 4 character
+              password must be 4 character or longer
             </p>
           )}
           <div>
