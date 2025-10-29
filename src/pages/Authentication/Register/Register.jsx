@@ -12,7 +12,18 @@ const Register = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    createUser(data.email, data.password);
+    createUser(data.email, data.password)
+      .then((userCredential) => {
+        // Signed up
+        const user = userCredential.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(error);
+        // ..
+      });
   };
   return (
     <div>
