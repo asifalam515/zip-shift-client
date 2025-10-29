@@ -2,6 +2,7 @@ import { p } from "framer-motion/client";
 import { useForm } from "react-hook-form";
 import useAuth from "../../../hooks/useAuth";
 import { Link } from "react-router";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 const Register = () => {
   const {
@@ -75,6 +76,7 @@ const Register = () => {
           </small>
         </p>
       </form>
+      <SocialLogin></SocialLogin>
     </div>
   );
 };
