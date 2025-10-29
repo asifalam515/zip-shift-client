@@ -1,6 +1,7 @@
 import { p } from "framer-motion/client";
 import { useForm } from "react-hook-form";
 import useAuth from "../../../hooks/useAuth";
+import { Link } from "react-router";
 
 const Register = () => {
   const {
@@ -62,8 +63,17 @@ const Register = () => {
             <a className="link link-hover">Forgot password?</a>
           </div>
 
-          <button className="btn btn-neutral mt-4">Login</button>
+          <button className="btn btn-primary text-black mt-4">Login</button>
         </fieldset>
+        <p>
+          {" "}
+          <small>
+            Already have an account?{" "}
+            <Link className="btn btn-link" to="/login">
+              Login
+            </Link>{" "}
+          </small>
+        </p>
       </form>
     </div>
   );
